@@ -2,7 +2,8 @@
 
 [![CC BY-SA 4.0][cc-by-sa-shield]][cc-by-sa]
 
-Description
+Cette présentation fait une liste de ressources intéressantes pour débuter dans le monde des CTF et des challenges de cybersécurité.
+Elle comprend une liste de sites ainsi que des outils souvent utilisés.
 
 ## Installation
 

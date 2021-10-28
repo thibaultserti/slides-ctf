@@ -15,7 +15,7 @@ jobs:
         run: |
           chmod 777 $(pwd)
           docker run --rm -p 1948:1948  -v $(pwd):/slides webpronl/reveal-md:latest&
-          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/main.md main.pdf
+          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/ctf.md ctf.pdf
       # CREATE RELEASE
       - name: Create Release
         id: create_release
@@ -34,6 +34,6 @@ jobs:
           draft: true
           prerelease: false
           files: |
-            main.pdf
+            ctf.pdf
         env:
           GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
