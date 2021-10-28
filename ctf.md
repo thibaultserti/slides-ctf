@@ -25,10 +25,6 @@ revealOptions:
 
 ### 2. Les catégories de challenges
 
-### 3. Les outils
-
-### 4. Participer à des CTF
-
 ---
 
 # 1. Les sites
