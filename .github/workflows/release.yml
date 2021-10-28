@@ -1,0 +1,41 @@
+---
+name: Create Release
+on:
+  push:
+    tags:
+      - 'v*'
+jobs:
+  build:
+    name: Create Release
+    runs-on: ubuntu-20.04
+    steps:
+      # CHECKOUT CODE
+      - name: Checkout code
+        uses: actions/checkout@v2
+        with:
+          ref: ${{ steps.vars.outputs.tag }}
+      # BUILD PDF
+      - name: Build pdf
+        run: |
+          chmod 777 $(pwd)
+          docker run --rm -p 1948:1948  -v $(pwd):/slides webpronl/reveal-md:latest&
+          docker run --rm -t --net=host -v $(pwd):/slides astefanutti/decktape http://localhost:1948/main.md main.pdf
+      # CREATE RELEASE
+      - name: Create Release
+        id: create_release
+        uses: actions/create-release@v1
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
+        with:
+          tag_name: ${{ github.ref }}
+          release_name: Release ${{ github.ref }}
+          draft: false
+          prerelease: false
+      # UPLOAD PDF
+      - name: Upload artefact
+        uses: softprops/action-gh-release@v1
+        with:
+          files: |
+            main.pdf
+        env:
+          GITHUB_TOKEN: ${{ secrets.GITHUB_TOKEN }}
