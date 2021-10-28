@@ -377,3 +377,19 @@ tomatosoup
 - **Wargames** : même chose que les box mais avec un équipe d'attaquant (dont le but et de rooter la machine) et une équipe de défenseur (dont le but est de la sécuriser).
 
 <img src="img/box.png" class="right-corner icon"/>
+
+---
+
+## Comment devenir meilleur ?
+
+- S'entraîner (beaucoup), faire le plus de challenges possibles
+- Participer à des CTF (CTFtime)
+- Participer aux CTF pour les étudiants (TRACS, Wavegame, European CyberSecurity Challenge, ...)
+- Lire des write-ups
+
+- Même quand on ne réussit pas, on apprend des choses en cherchant.
+- N'aller pas voir la solution (préférez qqn qui vous donne des indices)
+- Si vous lisez la solution, **reproduisez la !**
+
+---
+
