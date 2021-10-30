@@ -369,7 +369,7 @@ tomatosoup
 ## Réaliste / Box / Wargames
 
 - **Réaliste :** combine plusieurs catégories dans un même challenge.
-- **Box** : machine à rooter entièrement, très peu d'indication fourni. Se veut être le plus proche possible de pentest réel
+- **Box** : machine à rooter entièrement, très peu d'indications fournis. Se veut être le plus proche possible de pentest réel
 - **Wargames** : même chose que les box mais avec un équipe d'attaquant (dont le but et de rooter la machine) et une équipe de défenseur (dont le but est de la sécuriser).
 
 <img src="img/box.png" class="right-corner icon"/>
@@ -393,3 +393,4 @@ tomatosoup
 
 - 📹 https://www.youtube.com/c/LiveOverflow
 - 📹 https://www.youtube.com/c/JohnHammond010
+- 🐦 https://twitter.com/fs0c131y
