@@ -389,3 +389,7 @@ tomatosoup
 
 ---
 
+## Ressources
+
+- 📹 https://www.youtube.com/c/LiveOverflow
+- 📹 https://www.youtube.com/c/JohnHammond010
